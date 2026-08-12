@@ -1,0 +1,272 @@
+*{
+    
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Sekuya", system-ui;
+    font-size: large;
+
+}
+body{
+   
+    background:linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./image/ChatGPT\ Image\ Aug\ 11\,\ 2026\,\ 09_09_01\ AM.png)
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color:brown;
+    box-shadow: 0px 1px 5px black;
+    height: 50px;
+     background:linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./image/ChatGPT\ Image\ Aug\ 11\,\ 2026\,\ 01_11_58\ PM.png)
+
+}
+.brand{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.brandname{
+    margin-left: 10px;
+}
+.navlinks{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+.link:hover{
+    color: white;
+}
+#check{
+    display: none;
+}
+.icons{
+    font-size: 20px;
+    cursor: pointer;
+    right: 1%;
+    position: absolute;
+     display: none;
+}
+.hero{
+    display: flex;
+    padding: 160px 5%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.herotext{
+    flex: 1;
+    animation: fadein 1.5s ease;
+}
+.herotitle{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+    
+}
+.heropara{
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: white;
+}
+.herobutton{
+    padding: 15px;
+    color: black;
+    border: none;
+    border-radius: 15px;
+     transition: 1s;
+     cursor: pointer;
+     background:linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./image/ChatGPT\ Image\ Aug\ 11\,\ 2026\,\ 01_11_58\ PM.png)
+
+}
+.herobutton:hover{
+     background-color: brown;
+     transform: scale(1.2);
+    
+}
+.heroimage{
+    flex: 1;
+    padding: 0px;
+}
+.toyimage{
+    width: 100%;
+    border-radius: 15px;
+}
+.products{
+    padding: 0px  8% 60px 8%;
+    text-align: center;
+}
+.producthead{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color:white;
+}
+.productcontainer{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+   flex-wrap: wrap;
+}
+.card{
+   
+    width: 300px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+     background:linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://img.magnific.com/premium-photo/dark-sky-with-clouds-sun-shining-through-clouds_916191-420037.jpg?semt=ais_test_b&w=740&q=80)
+
+}
+.card:hover{
+    transform: translatey(-30px);
+}
+.cardimg{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+.productName,.price{
+    margin: 20px 0px;
+    color: white;
+}
+
+.banner{
+    margin: 0px 8% 60px 8%;
+    padding: 0px 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    border-radius: 30px;
+}
+.abouthead{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+.aboutpara{
+      font-size: small;
+    color: white;
+    margin-bottom: 40px;
+
+}
+.aboutbutton{
+    padding: 15px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 15px;
+     transition: 1s;
+     cursor: pointer;
+     background:linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./image/ChatGPT\ Image\ Aug\ 11\,\ 2026\,\ 01_11_58\ PM.png);
+
+}
+.contact{
+    height: 200px;
+    background-color: white;
+    padding: 0px 8%;
+    box-shadow: 0px 5px 15px rgba(0,0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.contacthead,.subhead{
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+.contactphn,.contactmail{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    gap: 10px;
+}
+.subinput{
+    width: 250px;
+
+}
+.subbutton{
+    
+    color: white;
+    background-color:brown ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* animations*/
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translate(40px,40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+}
+
+/*  Responsive*/
+@media(max-width:768px){
+    .brand{
+        font-size: 15px;
+    }
+    .icons{
+        display: flex;
+    }
+    #cancelicon{
+        display: none;
+    }
+    #check:checked~.icons #menuicon{
+        display: none;
+    }
+    #check:checked~.icons #cancelicon{
+        display: flex;
+    }
+    .navlinks{
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        left: 0px;
+       display: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      
+    }
+     #check:checked~.navlinks{
+        display: block;
+        
+}
+.links{
+    text-align: center;
+    margin: 1.3rem 0px;
+}
+.link{
+    color: white;
+}
+.hero{
+    flex-direction: column;
+    align-items: center;
+}
+.herotitle{
+    font-size: 35px;
+}
+.banner,.contact{
+    height: fit-content;
+}
+}
