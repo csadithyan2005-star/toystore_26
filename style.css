@@ -67,12 +67,14 @@ body{
     color: white;
     font-size: 50px;
     margin-bottom: 15px;
+    text-shadow: 0 1px 20px violet;
     
 }
 .heropara{
     margin-bottom: 15px;
     font-size: 13px;
     color: white;
+     text-shadow: 0 1px 20px violet;
 }
 .herobutton{
     padding: 15px;
@@ -105,6 +107,7 @@ body{
     font-size: 40px;
     margin-bottom: 50px;
     color:white;
+     text-shadow: 0 1px 20px violet;
 }
 .productcontainer{
     display: flex;
